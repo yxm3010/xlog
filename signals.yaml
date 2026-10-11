@@ -1,0 +1,70 @@
+signals:
+  - topic: vehicle_rates_setpoint
+    data:
+      - name: roll
+        alias: roll_rate_setpoint
+      - name: pitch
+        alias: pitch_rate_setpoint
+      - name: yaw
+        alias: yaw_rate_setpoint
+
+  - topic: vehicle_angular_velocity
+    data:
+      - name: xyz[0]
+        alias: angular_velocity_roll
+      - name: xyz[1]
+        alias: angular_velocity_pitch
+      - name: xyz[2]
+        alias: angular_velocity_yaw
+
+  - topic: vehicle_torque_setpoint
+    data:
+      - name: xyz[0]
+        alias: torque_roll
+      - name: xyz[1]
+        alias: torque_pitch
+      - name: xyz[2]
+        alias: torque_yaw
+
+  - topic: xinon_dart_status
+    data:
+      - name: state
+        alias: dart_state
+
+  - topic: xinon_dart_overall_torque_setpoint
+    data:
+      - name: xyz[0]
+        alias: dart_torque_roll
+      - name: xyz[1]
+        alias: dart_torque_pitch
+      - name: xyz[2]
+        alias: dart_torque_yaw
+
+  - topic: xinon_dart_torque_setpoint
+    data:
+      - name: xyz[0]
+        alias: dart_torque_roll_setpoint
+      - name: xyz[1]
+        alias: dart_torque_pitch_setpoint
+      - name: xyz[2]
+        alias: dart_torque_yaw_setpoint
+
+  - topic: control_allocator_status
+    data:
+      - name: unallocated_torque[0]
+        alias: unallocated_torque_roll
+      - name: unallocated_torque[1]
+        alias: unallocated_torque_pitch
+      - name: unallocated_torque[2]
+        alias: unallocated_torque_yaw
+
+  - topic: actuator_motors
+    data:
+      - name: control[0]
+        alias: actuator_motor_0
+      - name: control[1]
+        alias: actuator_motor_1
+      - name: control[2]
+        alias: actuator_motor_2
+      - name: control[3]
+        alias: actuator_motor_3
